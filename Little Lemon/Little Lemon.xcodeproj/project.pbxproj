@@ -11,6 +11,17 @@
 		CC9712BD2C4CB41D005D5AC3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9712BC2C4CB41D005D5AC3 /* ContentView.swift */; };
 		CC9712BF2C4CB41E005D5AC3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC9712BE2C4CB41E005D5AC3 /* Assets.xcassets */; };
 		CC9712C22C4CB41E005D5AC3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC9712C12C4CB41E005D5AC3 /* Preview Assets.xcassets */; };
+		CC9712C92C4DC26C005D5AC3 /* Onboarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9712C82C4DC26C005D5AC3 /* Onboarding.swift */; };
+		CC9712CB2C4DC6DC005D5AC3 /* LittleLemonLogo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9712CA2C4DC6DC005D5AC3 /* LittleLemonLogo.swift */; };
+		CC9712D42C4DDAB7005D5AC3 /* MarkaziText-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CC9712D32C4DDAB7005D5AC3 /* MarkaziText-Medium.ttf */; };
+		CC9712D62C4DDAC8005D5AC3 /* MarkaziText-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CC9712D52C4DDAC8005D5AC3 /* MarkaziText-Regular.ttf */; };
+		CC9712D82C4DDAD8005D5AC3 /* Karla-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CC9712D72C4DDAD8005D5AC3 /* Karla-Bold.ttf */; };
+		CC9712DA2C4DDAE2005D5AC3 /* Karla-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CC9712D92C4DDAE2005D5AC3 /* Karla-ExtraBold.ttf */; };
+		CC9712DC2C4DDAEE005D5AC3 /* Karla-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CC9712DB2C4DDAEE005D5AC3 /* Karla-Medium.ttf */; };
+		CC9712DE2C4DDAFE005D5AC3 /* Karla-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CC9712DD2C4DDAFE005D5AC3 /* Karla-Regular.ttf */; };
+		CC9712E12C4DED6D005D5AC3 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9712E02C4DED6D005D5AC3 /* Home.swift */; };
+		CC9712E32C4DEDD4005D5AC3 /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9712E22C4DEDD4005D5AC3 /* Menu.swift */; };
+		CC9712E52C4DF26C005D5AC3 /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9712E42C4DF26C005D5AC3 /* UserProfile.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +30,18 @@
 		CC9712BC2C4CB41D005D5AC3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		CC9712BE2C4CB41E005D5AC3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CC9712C12C4CB41E005D5AC3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		CC9712C82C4DC26C005D5AC3 /* Onboarding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Onboarding.swift; sourceTree = "<group>"; };
+		CC9712CA2C4DC6DC005D5AC3 /* LittleLemonLogo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LittleLemonLogo.swift; sourceTree = "<group>"; };
+		CC9712D32C4DDAB7005D5AC3 /* MarkaziText-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "MarkaziText-Medium.ttf"; path = "../../../../MarkaziText-Medium.ttf"; sourceTree = "<group>"; };
+		CC9712D52C4DDAC8005D5AC3 /* MarkaziText-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "MarkaziText-Regular.ttf"; path = "../../../../MarkaziText-Regular.ttf"; sourceTree = "<group>"; };
+		CC9712D72C4DDAD8005D5AC3 /* Karla-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Karla-Bold.ttf"; path = "../../../../Karla/static/Karla-Bold.ttf"; sourceTree = "<group>"; };
+		CC9712D92C4DDAE2005D5AC3 /* Karla-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Karla-ExtraBold.ttf"; path = "../../../../Karla/static/Karla-ExtraBold.ttf"; sourceTree = "<group>"; };
+		CC9712DB2C4DDAEE005D5AC3 /* Karla-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Karla-Medium.ttf"; path = "../../../../Karla/static/Karla-Medium.ttf"; sourceTree = "<group>"; };
+		CC9712DD2C4DDAFE005D5AC3 /* Karla-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Karla-Regular.ttf"; path = "../../../../Karla/static/Karla-Regular.ttf"; sourceTree = "<group>"; };
+		CC9712DF2C4DDBA4005D5AC3 /* Little-Lemon-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Little-Lemon-Info.plist"; sourceTree = SOURCE_ROOT; };
+		CC9712E02C4DED6D005D5AC3 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		CC9712E22C4DEDD4005D5AC3 /* Menu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
+		CC9712E42C4DF26C005D5AC3 /* UserProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfile.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,10 +74,17 @@
 		CC9712B92C4CB41D005D5AC3 /* Little Lemon */ = {
 			isa = PBXGroup;
 			children = (
+				CC9712DF2C4DDBA4005D5AC3 /* Little-Lemon-Info.plist */,
+				CC9712CC2C4DD9EF005D5AC3 /* Font */,
 				CC9712BA2C4CB41D005D5AC3 /* Little_LemonApp.swift */,
 				CC9712BC2C4CB41D005D5AC3 /* ContentView.swift */,
 				CC9712BE2C4CB41E005D5AC3 /* Assets.xcassets */,
 				CC9712C02C4CB41E005D5AC3 /* Preview Content */,
+				CC9712C82C4DC26C005D5AC3 /* Onboarding.swift */,
+				CC9712CA2C4DC6DC005D5AC3 /* LittleLemonLogo.swift */,
+				CC9712E02C4DED6D005D5AC3 /* Home.swift */,
+				CC9712E22C4DEDD4005D5AC3 /* Menu.swift */,
+				CC9712E42C4DF26C005D5AC3 /* UserProfile.swift */,
 			);
 			path = "Little Lemon";
 			sourceTree = "<group>";
@@ -65,6 +95,19 @@
 				CC9712C12C4CB41E005D5AC3 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		CC9712CC2C4DD9EF005D5AC3 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				CC9712D72C4DDAD8005D5AC3 /* Karla-Bold.ttf */,
+				CC9712D92C4DDAE2005D5AC3 /* Karla-ExtraBold.ttf */,
+				CC9712DB2C4DDAEE005D5AC3 /* Karla-Medium.ttf */,
+				CC9712DD2C4DDAFE005D5AC3 /* Karla-Regular.ttf */,
+				CC9712D32C4DDAB7005D5AC3 /* MarkaziText-Medium.ttf */,
+				CC9712D52C4DDAC8005D5AC3 /* MarkaziText-Regular.ttf */,
+			);
+			path = Font;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,8 +168,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC9712D42C4DDAB7005D5AC3 /* MarkaziText-Medium.ttf in Resources */,
+				CC9712D82C4DDAD8005D5AC3 /* Karla-Bold.ttf in Resources */,
+				CC9712DA2C4DDAE2005D5AC3 /* Karla-ExtraBold.ttf in Resources */,
+				CC9712DC2C4DDAEE005D5AC3 /* Karla-Medium.ttf in Resources */,
 				CC9712C22C4CB41E005D5AC3 /* Preview Assets.xcassets in Resources */,
+				CC9712D62C4DDAC8005D5AC3 /* MarkaziText-Regular.ttf in Resources */,
 				CC9712BF2C4CB41E005D5AC3 /* Assets.xcassets in Resources */,
+				CC9712DE2C4DDAFE005D5AC3 /* Karla-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,7 +186,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC9712E32C4DEDD4005D5AC3 /* Menu.swift in Sources */,
+				CC9712C92C4DC26C005D5AC3 /* Onboarding.swift in Sources */,
+				CC9712E52C4DF26C005D5AC3 /* UserProfile.swift in Sources */,
 				CC9712BD2C4CB41D005D5AC3 /* ContentView.swift in Sources */,
+				CC9712E12C4DED6D005D5AC3 /* Home.swift in Sources */,
+				CC9712CB2C4DC6DC005D5AC3 /* LittleLemonLogo.swift in Sources */,
 				CC9712BB2C4CB41D005D5AC3 /* Little_LemonApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -275,6 +329,8 @@
 				DEVELOPMENT_TEAM = 64V8Z96RJF;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Little-Lemon-Info.plist";
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -304,6 +360,8 @@
 				DEVELOPMENT_TEAM = 64V8Z96RJF;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Little-Lemon-Info.plist";
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
