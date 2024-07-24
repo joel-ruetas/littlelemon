@@ -1,4 +1,3 @@
-//
 //  Onboarding.swift
 //  Little Lemon
 //
@@ -14,6 +13,8 @@ let kIsLoggedIn = "IsLoggedIn key"
 
 struct Onboarding: View {
     
+    @Environment(\.managedObjectContext) private var viewContext
+    
     @State private var isLoggedIn = false
     @State var showFormInvalidMessage = false
     @State var errorMessage = ""
@@ -28,41 +29,50 @@ struct Onboarding: View {
                 NavigationLink(destination: Home(), isActive: $isLoggedIn) {
                     EmptyView()
                 }
+                
                 Image("Logo")
                     .resizable()
                     .aspectRatio(contentMode: .fit)
                     .frame(width: 250, height: 250)
-
+                
                 Text("Sign Up")
                     .font(.custom("MarkaziText-Medium", size: 64))
                     .fontWeight(.bold)
-                    .padding(.top, 8)
-
-                TextField("First Name", text: $firstName)
-                    .textFieldStyle(RoundedBorderTextFieldStyle())
-                    .font(.custom("Karla-Medium", size: 18))
-                    .fontWeight(.medium)
-                    .padding(.horizontal, 20)
-                    .padding(.top, 8)
-
-                TextField("Last Name", text: $lastName)
-                    .textFieldStyle(RoundedBorderTextFieldStyle())
-                    .font(.custom("Karla-Medium", size: 18))
-                    .fontWeight(.medium)
-                    .padding(.horizontal, 20)
-                    .padding(.top, 8)
-
-                TextField("Email", text: $email)
-                    .textFieldStyle(RoundedBorderTextFieldStyle())
-                    .font(.custom("Karla-Medium", size: 18))
-                    .fontWeight(.medium)
-                    .keyboardType(.emailAddress)
-                    .textContentType(.emailAddress)
-                    .disableAutocorrection(true)
-                    .autocapitalization(.none)
-                    .padding(.horizontal, 20)
-                    .padding(.top, 8)
-
+                    .foregroundColor(.highlight2)
+                
+                Spacer()
+                
+                VStack(spacing: 16) {
+                    TextField("First Name", text: $firstName)
+                        .textFieldStyle(RoundedBorderTextFieldStyle())
+                        .disableAutocorrection(true)
+                        .autocapitalization(.none)
+                        .font(.custom("Karla-Medium", size: 18))
+                        .fontWeight(.medium)
+                        .padding(.horizontal, 20)
+                    
+                    TextField("Last Name", text: $lastName)
+                        .textFieldStyle(RoundedBorderTextFieldStyle())
+                        .disableAutocorrection(true)
+                        .autocapitalization(.none)
+                        .font(.custom("Karla-Medium", size: 18))
+                        .fontWeight(.medium)
+                        .padding(.horizontal, 20)
+                    
+                    TextField("Email", text: $email)
+                        .textFieldStyle(RoundedBorderTextFieldStyle())
+                        .font(.custom("Karla-Medium", size: 18))
+                        .fontWeight(.medium)
+                        .keyboardType(.emailAddress)
+                        .textContentType(.emailAddress)
+                        .disableAutocorrection(true)
+                        .autocapitalization(.none)
+                        .padding(.horizontal, 20)
+                }
+                .padding(.top, 16)
+                
+                Spacer()
+                
                 Button(action: {
                     validateForm()
                 }) {
@@ -72,12 +82,13 @@ struct Onboarding: View {
                         .foregroundColor(.white)
                         .padding()
                         .frame(maxWidth: .infinity)
-                        .background(Color(hex: "#495E57"))
+                        .background(Color("Primary 1"))
                         .cornerRadius(16)
+                        .padding(.horizontal, 20)
                 }
-
-                .padding(.horizontal, 20)
                 .padding(.top, 24)
+                
+                Spacer()
             }
             .alert(isPresented: $showFormInvalidMessage) {
                 Alert(
@@ -85,7 +96,7 @@ struct Onboarding: View {
                     message: Text(errorMessage),
                     dismissButton: .default(Text("OK"))
                 )
-        }
+            }
         }
     }
     
@@ -131,42 +142,15 @@ struct Onboarding: View {
     }
     
     func isValid(name: String) -> Bool {
-        guard !name.isEmpty,
-              name.count > 2
-        else { return false }
-        for chr in name {
-            if (!(chr >= "a" && chr <= "z") && !(chr >= "A" && chr <= "Z") && !(chr == " ") ) {
-                return false
-            }
-        }
-        return true
+        let nameRegex = "^[A-Za-z]{3,}$"
+        let namePredicate = NSPredicate(format: "SELF MATCHES %@", nameRegex)
+        return namePredicate.evaluate(with: name)
     }
     
     func isValid(email: String) -> Bool {
-        guard !email.isEmpty else { return false }
-        let emailValidationRegex = "^[\\p{L}0-9!#$%&'*+\\/=?^_`{|}~-][\\p{L}0-9.!#$%&'*+\\/=?^_`{|}~-]{0,63}@[\\p{L}0-9-]+(?:\\.[\\p{L}0-9-]{2,7})*$"
-        let emailValidationPredicate = NSPredicate(format: "SELF MATCHES %@", emailValidationRegex)
-        return emailValidationPredicate.evaluate(with: email)
-    }
-}
-
-// Color extension to handle hex colors
-extension Color {
-    init(hex: String) {
-        let scanner = Scanner(string: hex.trimmingCharacters(in: CharacterSet.alphanumerics.inverted))
-        var hexNumber: UInt64 = 0
-        let r, g, b: Double
-        let a: Double = 1.0
-
-        if scanner.scanHexInt64(&hexNumber) {
-            r = Double((hexNumber & 0xff0000) >> 16) / 255
-            g = Double((hexNumber & 0x00ff00) >> 8) / 255
-            b = Double(hexNumber & 0x0000ff) / 255
-            self.init(.sRGB, red: r, green: g, blue: b, opacity: a)
-            return
-        }
-
-        self.init(.sRGB, red: 1, green: 0, blue: 0, opacity: a)
+        let emailRegex = "^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,}$"
+        let emailPredicate = NSPredicate(format: "SELF MATCHES %@", emailRegex)
+        return emailPredicate.evaluate(with: email)
     }
 }
 

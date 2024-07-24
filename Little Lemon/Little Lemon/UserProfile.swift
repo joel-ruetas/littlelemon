@@ -35,6 +35,9 @@ struct UserProfile: View {
             Text("Email: \(email)")
             
             Button("Logout") {
+                let persistenceController = PersistenceController.shared
+                persistenceController.clear()
+                
                 UserDefaults.standard.set(false, forKey: kIsLoggedIn)
                 self.presentation.wrappedValue.dismiss()
             }

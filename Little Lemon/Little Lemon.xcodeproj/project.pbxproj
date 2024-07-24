@@ -7,14 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CC1281772C4E11B9004D6C03 /* FetchedObjects.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC1281762C4E11B9004D6C03 /* FetchedObjects.swift */; };
+		CC1281792C4E11DF004D6C03 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC1281782C4E11DF004D6C03 /* Persistence.swift */; };
+		CC12817B2C4E135B004D6C03 /* MenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC12817A2C4E135B004D6C03 /* MenuItem.swift */; };
+		CC12817D2C4E139C004D6C03 /* MenuList.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC12817C2C4E139C004D6C03 /* MenuList.swift */; };
+		CC1281802C4E1613004D6C03 /* ExampleDatabase.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CC12817E2C4E1613004D6C03 /* ExampleDatabase.xcdatamodeld */; };
+		CC4A57332C50971500BDB4F6 /* DishDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC4A57322C50971500BDB4F6 /* DishDetails.swift */; };
+		CC4A57352C50B3BF00BDB4F6 /* DisplayDish.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC4A57342C50B3BF00BDB4F6 /* DisplayDish.swift */; };
+		CC6BE2762C4F2801008E9F08 /* Dish+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6BE2742C4F2801008E9F08 /* Dish+CoreDataClass.swift */; };
+		CC6BE2772C4F2801008E9F08 /* Dish+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6BE2752C4F2801008E9F08 /* Dish+CoreDataProperties.swift */; };
 		CC9712BB2C4CB41D005D5AC3 /* Little_LemonApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9712BA2C4CB41D005D5AC3 /* Little_LemonApp.swift */; };
-		CC9712BD2C4CB41D005D5AC3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9712BC2C4CB41D005D5AC3 /* ContentView.swift */; };
 		CC9712BF2C4CB41E005D5AC3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC9712BE2C4CB41E005D5AC3 /* Assets.xcassets */; };
 		CC9712C22C4CB41E005D5AC3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC9712C12C4CB41E005D5AC3 /* Preview Assets.xcassets */; };
 		CC9712C92C4DC26C005D5AC3 /* Onboarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9712C82C4DC26C005D5AC3 /* Onboarding.swift */; };
-		CC9712CB2C4DC6DC005D5AC3 /* LittleLemonLogo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9712CA2C4DC6DC005D5AC3 /* LittleLemonLogo.swift */; };
-		CC9712D42C4DDAB7005D5AC3 /* MarkaziText-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CC9712D32C4DDAB7005D5AC3 /* MarkaziText-Medium.ttf */; };
-		CC9712D62C4DDAC8005D5AC3 /* MarkaziText-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CC9712D52C4DDAC8005D5AC3 /* MarkaziText-Regular.ttf */; };
 		CC9712D82C4DDAD8005D5AC3 /* Karla-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CC9712D72C4DDAD8005D5AC3 /* Karla-Bold.ttf */; };
 		CC9712DA2C4DDAE2005D5AC3 /* Karla-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CC9712D92C4DDAE2005D5AC3 /* Karla-ExtraBold.ttf */; };
 		CC9712DC2C4DDAEE005D5AC3 /* Karla-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CC9712DB2C4DDAEE005D5AC3 /* Karla-Medium.ttf */; };
@@ -22,18 +27,25 @@
 		CC9712E12C4DED6D005D5AC3 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9712E02C4DED6D005D5AC3 /* Home.swift */; };
 		CC9712E32C4DEDD4005D5AC3 /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9712E22C4DEDD4005D5AC3 /* Menu.swift */; };
 		CC9712E52C4DF26C005D5AC3 /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9712E42C4DF26C005D5AC3 /* UserProfile.swift */; };
+		CC9712EB2C4E1030005D5AC3 /* MarkaziText-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CC9712EA2C4E1030005D5AC3 /* MarkaziText-Medium.ttf */; };
+		CC9712ED2C4E1052005D5AC3 /* MarkaziText-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CC9712EC2C4E1052005D5AC3 /* MarkaziText-Regular.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CC1281762C4E11B9004D6C03 /* FetchedObjects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchedObjects.swift; sourceTree = "<group>"; };
+		CC1281782C4E11DF004D6C03 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		CC12817A2C4E135B004D6C03 /* MenuItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItem.swift; sourceTree = "<group>"; };
+		CC12817C2C4E139C004D6C03 /* MenuList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuList.swift; sourceTree = "<group>"; };
+		CC12817F2C4E1613004D6C03 /* ExampleDatabase.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ExampleDatabase.xcdatamodel; sourceTree = "<group>"; };
+		CC4A57322C50971500BDB4F6 /* DishDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishDetails.swift; sourceTree = "<group>"; };
+		CC4A57342C50B3BF00BDB4F6 /* DisplayDish.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayDish.swift; sourceTree = "<group>"; };
+		CC6BE2742C4F2801008E9F08 /* Dish+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dish+CoreDataClass.swift"; sourceTree = "<group>"; };
+		CC6BE2752C4F2801008E9F08 /* Dish+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dish+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		CC9712B72C4CB41D005D5AC3 /* Little Lemon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Little Lemon.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC9712BA2C4CB41D005D5AC3 /* Little_LemonApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Little_LemonApp.swift; sourceTree = "<group>"; };
-		CC9712BC2C4CB41D005D5AC3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		CC9712BE2C4CB41E005D5AC3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CC9712C12C4CB41E005D5AC3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CC9712C82C4DC26C005D5AC3 /* Onboarding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Onboarding.swift; sourceTree = "<group>"; };
-		CC9712CA2C4DC6DC005D5AC3 /* LittleLemonLogo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LittleLemonLogo.swift; sourceTree = "<group>"; };
-		CC9712D32C4DDAB7005D5AC3 /* MarkaziText-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "MarkaziText-Medium.ttf"; path = "../../../../MarkaziText-Medium.ttf"; sourceTree = "<group>"; };
-		CC9712D52C4DDAC8005D5AC3 /* MarkaziText-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "MarkaziText-Regular.ttf"; path = "../../../../MarkaziText-Regular.ttf"; sourceTree = "<group>"; };
 		CC9712D72C4DDAD8005D5AC3 /* Karla-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Karla-Bold.ttf"; path = "../../../../Karla/static/Karla-Bold.ttf"; sourceTree = "<group>"; };
 		CC9712D92C4DDAE2005D5AC3 /* Karla-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Karla-ExtraBold.ttf"; path = "../../../../Karla/static/Karla-ExtraBold.ttf"; sourceTree = "<group>"; };
 		CC9712DB2C4DDAEE005D5AC3 /* Karla-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Karla-Medium.ttf"; path = "../../../../Karla/static/Karla-Medium.ttf"; sourceTree = "<group>"; };
@@ -42,6 +54,8 @@
 		CC9712E02C4DED6D005D5AC3 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 		CC9712E22C4DEDD4005D5AC3 /* Menu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
 		CC9712E42C4DF26C005D5AC3 /* UserProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfile.swift; sourceTree = "<group>"; };
+		CC9712EA2C4E1030005D5AC3 /* MarkaziText-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "MarkaziText-Medium.ttf"; path = "../../../../MarkaziText/MarkaziText-Medium.ttf"; sourceTree = "<group>"; };
+		CC9712EC2C4E1052005D5AC3 /* MarkaziText-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "MarkaziText-Regular.ttf"; path = "../../../../MarkaziText/MarkaziText-Regular.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +72,8 @@
 		CC9712AE2C4CB41D005D5AC3 = {
 			isa = PBXGroup;
 			children = (
+				CC6BE2742C4F2801008E9F08 /* Dish+CoreDataClass.swift */,
+				CC6BE2752C4F2801008E9F08 /* Dish+CoreDataProperties.swift */,
 				CC9712B92C4CB41D005D5AC3 /* Little Lemon */,
 				CC9712B82C4CB41D005D5AC3 /* Products */,
 			);
@@ -77,14 +93,19 @@
 				CC9712DF2C4DDBA4005D5AC3 /* Little-Lemon-Info.plist */,
 				CC9712CC2C4DD9EF005D5AC3 /* Font */,
 				CC9712BA2C4CB41D005D5AC3 /* Little_LemonApp.swift */,
-				CC9712BC2C4CB41D005D5AC3 /* ContentView.swift */,
 				CC9712BE2C4CB41E005D5AC3 /* Assets.xcassets */,
 				CC9712C02C4CB41E005D5AC3 /* Preview Content */,
 				CC9712C82C4DC26C005D5AC3 /* Onboarding.swift */,
-				CC9712CA2C4DC6DC005D5AC3 /* LittleLemonLogo.swift */,
 				CC9712E02C4DED6D005D5AC3 /* Home.swift */,
 				CC9712E22C4DEDD4005D5AC3 /* Menu.swift */,
 				CC9712E42C4DF26C005D5AC3 /* UserProfile.swift */,
+				CC1281762C4E11B9004D6C03 /* FetchedObjects.swift */,
+				CC1281782C4E11DF004D6C03 /* Persistence.swift */,
+				CC12817A2C4E135B004D6C03 /* MenuItem.swift */,
+				CC12817C2C4E139C004D6C03 /* MenuList.swift */,
+				CC12817E2C4E1613004D6C03 /* ExampleDatabase.xcdatamodeld */,
+				CC4A57322C50971500BDB4F6 /* DishDetails.swift */,
+				CC4A57342C50B3BF00BDB4F6 /* DisplayDish.swift */,
 			);
 			path = "Little Lemon";
 			sourceTree = "<group>";
@@ -100,12 +121,12 @@
 		CC9712CC2C4DD9EF005D5AC3 /* Font */ = {
 			isa = PBXGroup;
 			children = (
+				CC9712EC2C4E1052005D5AC3 /* MarkaziText-Regular.ttf */,
+				CC9712EA2C4E1030005D5AC3 /* MarkaziText-Medium.ttf */,
 				CC9712D72C4DDAD8005D5AC3 /* Karla-Bold.ttf */,
 				CC9712D92C4DDAE2005D5AC3 /* Karla-ExtraBold.ttf */,
 				CC9712DB2C4DDAEE005D5AC3 /* Karla-Medium.ttf */,
 				CC9712DD2C4DDAFE005D5AC3 /* Karla-Regular.ttf */,
-				CC9712D32C4DDAB7005D5AC3 /* MarkaziText-Medium.ttf */,
-				CC9712D52C4DDAC8005D5AC3 /* MarkaziText-Regular.ttf */,
 			);
 			path = Font;
 			sourceTree = "<group>";
@@ -168,13 +189,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CC9712D42C4DDAB7005D5AC3 /* MarkaziText-Medium.ttf in Resources */,
 				CC9712D82C4DDAD8005D5AC3 /* Karla-Bold.ttf in Resources */,
 				CC9712DA2C4DDAE2005D5AC3 /* Karla-ExtraBold.ttf in Resources */,
+				CC9712EB2C4E1030005D5AC3 /* MarkaziText-Medium.ttf in Resources */,
 				CC9712DC2C4DDAEE005D5AC3 /* Karla-Medium.ttf in Resources */,
 				CC9712C22C4CB41E005D5AC3 /* Preview Assets.xcassets in Resources */,
-				CC9712D62C4DDAC8005D5AC3 /* MarkaziText-Regular.ttf in Resources */,
 				CC9712BF2C4CB41E005D5AC3 /* Assets.xcassets in Resources */,
+				CC9712ED2C4E1052005D5AC3 /* MarkaziText-Regular.ttf in Resources */,
 				CC9712DE2C4DDAFE005D5AC3 /* Karla-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -186,13 +207,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC1281802C4E1613004D6C03 /* ExampleDatabase.xcdatamodeld in Sources */,
+				CC1281792C4E11DF004D6C03 /* Persistence.swift in Sources */,
+				CC6BE2762C4F2801008E9F08 /* Dish+CoreDataClass.swift in Sources */,
+				CC6BE2772C4F2801008E9F08 /* Dish+CoreDataProperties.swift in Sources */,
+				CC4A57332C50971500BDB4F6 /* DishDetails.swift in Sources */,
 				CC9712E32C4DEDD4005D5AC3 /* Menu.swift in Sources */,
+				CC4A57352C50B3BF00BDB4F6 /* DisplayDish.swift in Sources */,
 				CC9712C92C4DC26C005D5AC3 /* Onboarding.swift in Sources */,
 				CC9712E52C4DF26C005D5AC3 /* UserProfile.swift in Sources */,
-				CC9712BD2C4CB41D005D5AC3 /* ContentView.swift in Sources */,
+				CC1281772C4E11B9004D6C03 /* FetchedObjects.swift in Sources */,
 				CC9712E12C4DED6D005D5AC3 /* Home.swift in Sources */,
-				CC9712CB2C4DC6DC005D5AC3 /* LittleLemonLogo.swift in Sources */,
 				CC9712BB2C4CB41D005D5AC3 /* Little_LemonApp.swift in Sources */,
+				CC12817B2C4E135B004D6C03 /* MenuItem.swift in Sources */,
+				CC12817D2C4E139C004D6C03 /* MenuList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -402,6 +430,20 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		CC12817E2C4E1613004D6C03 /* ExampleDatabase.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				CC12817F2C4E1613004D6C03 /* ExampleDatabase.xcdatamodel */,
+			);
+			currentVersion = CC12817F2C4E1613004D6C03 /* ExampleDatabase.xcdatamodel */;
+			name = ExampleDatabase.xcdatamodeld;
+			path = "/Users/jruetas/Desktop/Meta iOS/12 iOS App Capstone/Little Lemon project/Little Lemon/Little Lemon/ExampleDatabase.xcdatamodeld";
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = CC9712AF2C4CB41D005D5AC3 /* Project object */;
 }
