@@ -15,13 +15,33 @@ struct DisplayDish: View {
     var body: some View {
         NavigationLink(destination: DishDetails(dish: dish)) {
             HStack {
-                Text("\(dish.title ?? "") - $\(dish.price, specifier: "%.2f")")
+                VStack(alignment: .leading) {
+                    Text(dish.title ?? "")
+                        .font(.custom("Karla", size: 18))
+                        .fontWeight(.bold)
+                        .foregroundColor(.black)
+                    
+                    Text(dish.desc ?? "")
+                        .font(.custom("Karla", size: 16))
+                        .foregroundColor(Color("Highlight 2"))
+                        .lineLimit(2)
+                        .multilineTextAlignment(.leading)
+                        .padding(.top)
+                    
+                    Text("$\(dish.price, specifier: "%.2f")")
+                        .font(.custom("Karla", size: 16))
+                        .fontWeight(.bold)
+                        .foregroundColor(.black)
+                        .padding(.top)
+                }
+                
                 Spacer()
+                
                 if let imageUrl = dish.image, let url = URL(string: imageUrl) {
                     AsyncImage(url: url) { image in
-                        image.resizable()
-                            .aspectRatio(contentMode: .fit)
-                            .frame(width: 50, height: 50)
+                        image
+                            .resizable()
+                            .frame(width: 100, height: 100)
                     } placeholder: {
                         ProgressView()
                     }

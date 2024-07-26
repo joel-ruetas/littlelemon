@@ -11,41 +11,11 @@ struct Menu: View {
     
     var body: some View {
         VStack {
-            Text("Little Lemon Restaurant")
-                .font(.largeTitle)
-                .fontWeight(.bold)
-                .padding()
+            NavigationBar()
+            
+            HeroSection(searchText: $searchText)
 
-            Text("Chicago")
-                .font(.title)
-                .padding()
-
-            Text("Little Lemon is a charming neighborhood bistro that serves simple food and classic cocktails in a lively but casual environment. The restaurant features a locally-sourced menu with daily specials.")
-                .font(.subheadline)
-                .padding()
-
-            TextField("Search menu", text: $searchText)
-                .padding()
-
-            HStack {
-                ForEach(["Starters", "Mains", "Desserts", "Drinks"], id: \.self) { category in
-                    Button(action: {
-                        if selectedCategory == category {
-                            selectedCategory = nil
-                        } else {
-                            selectedCategory = category
-                        }
-                    }) {
-                        Text(category)
-                            .padding(10)
-                            .background(selectedCategory == category ? Color.blue : Color.gray)
-                            .foregroundColor(.white)
-                            .font(.subheadline)
-                            .cornerRadius(16)
-                    }
-                }
-            }
-            .padding()
+            MenuView(selectedCategory: $selectedCategory)
 
             FetchedObjects(predicate: buildPredicate(), sortDescriptors: buildSortDescriptors()) { (dishes: [Dish]) in
                 List {

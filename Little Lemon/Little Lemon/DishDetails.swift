@@ -13,24 +13,30 @@ struct DishDetails: View {
     var body: some View {
         VStack {
             Text(dish.title ?? "Unknown Dish")
-                .font(.largeTitle)
+                .font(.custom("MarkaziText-Medium", size: 64))
+                .fontWeight(.medium)
+                .foregroundColor(Color("Primary 1"))
+                .multilineTextAlignment(.center)
                 .padding()
-            
-            Text("$\(dish.price, specifier: "%.2f")")
-                 .font(.title)
-                 .padding()
             
             if let description = dish.desc {
                 Text(description)
-                    .font(.body)
-                    .padding()
+                    .font(.custom("Karla", size: 18))
+                    .fontWeight(.medium)
+                    .padding(.leading)
+                    .padding(.trailing)
             }
+            
+            Text("$\(dish.price, specifier: "%.2f")")
+                .font(.custom("Karla", size: 20))
+                .fontWeight(.bold)
+                .padding()
 
             if let imageUrl = dish.image, let url = URL(string: imageUrl) {
                 AsyncImage(url: url) { image in
                     image.resizable()
                         .aspectRatio(contentMode: .fit)
-                        .frame(width: 200, height: 200)
+                        .frame(width: 300, height: 300)
                         .padding()
                 } placeholder: {
                     ProgressView()

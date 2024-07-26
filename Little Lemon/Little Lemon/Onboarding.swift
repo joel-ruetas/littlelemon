@@ -33,11 +33,11 @@ struct Onboarding: View {
                 Image("Logo")
                     .resizable()
                     .aspectRatio(contentMode: .fit)
-                    .frame(width: 250, height: 250)
+                    .frame(width: 250, height: 100)
                 
                 Text("Sign Up")
                     .font(.custom("MarkaziText-Medium", size: 64))
-                    .fontWeight(.bold)
+                    .fontWeight(.medium)
                     .foregroundColor(.highlight2)
                 
                 Spacer()
@@ -58,6 +58,7 @@ struct Onboarding: View {
                         .font(.custom("Karla-Medium", size: 18))
                         .fontWeight(.medium)
                         .padding(.horizontal, 20)
+                        .padding(.top)
                     
                     TextField("Email", text: $email)
                         .textFieldStyle(RoundedBorderTextFieldStyle())
@@ -67,12 +68,13 @@ struct Onboarding: View {
                         .textContentType(.emailAddress)
                         .disableAutocorrection(true)
                         .autocapitalization(.none)
+                        .padding(.top)
                         .padding(.horizontal, 20)
                 }
                 .padding(.top, 16)
-                
+
                 Spacer()
-                
+
                 Button(action: {
                     validateForm()
                 }) {
@@ -87,7 +89,7 @@ struct Onboarding: View {
                         .padding(.horizontal, 20)
                 }
                 .padding(.top, 24)
-                
+
                 Spacer()
             }
             .alert(isPresented: $showFormInvalidMessage) {
